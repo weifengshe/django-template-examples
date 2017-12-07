@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES!</h1>
+    <a href="{% url 'basic_app:other' %}">THE OTHER PAGE!</a>
+    <!-- no space between quotes -->
+    <!-- basic_app matches basic_app/urls.py/app_name -->
+    <!-- other matches basic_app/urls.py/urlpatterns:other -->
+    <a href="{% url 'admin:index' %}">LINK TO ADMIN</a>
+    <a href="{% url 'index' %}">INDEX PAGE!</a>
+  </body>
+</html>
